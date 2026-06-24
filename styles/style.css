@@ -1,0 +1,29 @@
+.main-container{
+    background: rgba(15,23,42,0.7);
+    backdrop-filter: blur(10px);
+    border: 2px solid #00F5FF;
+    border-radius:20px;
+    padding:20px;
+    box-shadow:0 0 20px #00F5FF;
+}
+
+.neon-card{
+    background:#141B2D;
+    border:1px solid #00F5FF;
+    border-radius:15px;
+    padding:15px;
+    margin:10px;
+    box-shadow:0 0 15px #00F5FF;
+}
+
+.glow-title{
+    color:#00F5FF;
+    text-align:center;
+    text-shadow:0 0 20px #00F5FF;
+}
+
+.stButton button{
+    border:1px solid #00F5FF;
+    border-radius:12px;
+    box-shadow:0 0 10px #00F5FF;
+}

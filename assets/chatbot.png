@@ -1,0 +1,4 @@
+st.image(
+    "assets/chatbot.png",
+    width=150
+)

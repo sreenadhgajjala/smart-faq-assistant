@@ -1,0 +1,122 @@
+[
+{
+"question":"What is AI?",
+"answer":"Artificial Intelligence enables machines to mimic human intelligence."
+},
+{
+"question":"What is Machine Learning?",
+"answer":"Machine Learning is a subset of AI that learns from data."
+},
+{
+"question":"What is Deep Learning?",
+"answer":"Deep Learning uses neural networks with many layers."
+},
+{
+"question":"What is NLP?",
+"answer":"Natural Language Processing helps computers understand human language."
+},
+{
+"question":"What is Supervised Learning?",
+"answer":"Supervised learning uses labeled data for training."
+},
+{
+"question":"What is Unsupervised Learning?",
+"answer":"Unsupervised learning finds patterns in unlabeled data."
+},
+{
+"question":"What is Reinforcement Learning?",
+"answer":"Reinforcement learning learns through rewards and penalties."
+},
+{
+"question":"What is TensorFlow?",
+"answer":"TensorFlow is an open-source machine learning framework."
+},
+{
+"question":"What is PyTorch?",
+"answer":"PyTorch is a popular deep learning framework."
+},
+{
+"question":"What is Data Science?",
+"answer":"Data Science extracts insights from data."
+},
+{
+"question":"What is Overfitting?",
+"answer":"Overfitting occurs when a model learns training data too well and performs poorly on unseen data."
+},
+{
+"question":"What is Underfitting?",
+"answer":"Underfitting occurs when a model fails to learn important patterns from data."
+},
+{
+"question":"What is CNN?",
+"answer":"CNN stands for Convolutional Neural Network and is mainly used for image processing."
+},
+{
+"question":"What is RNN?",
+"answer":"RNN stands for Recurrent Neural Network and is used for sequential data."
+},
+{
+"question":"What is Tokenization?",
+"answer":"Tokenization is the process of splitting text into smaller units called tokens."
+},
+{
+"question":"What is Stemming?",
+"answer":"Stemming reduces words to their root form."
+},
+{
+"question":"What is Lemmatization?",
+"answer":"Lemmatization converts words into their dictionary base form."
+},
+{
+"question":"What is Data Science?",
+"answer":"Data Science extracts meaningful insights from structured and unstructured data."
+},
+{
+"question":"What is TensorFlow?",
+"answer":"TensorFlow is an open-source machine learning framework developed by Google."
+},
+{
+"question":"What is PyTorch?",
+"answer":"PyTorch is a popular deep learning framework developed by Meta."
+},
+{
+"question":"What is Feature Engineering?",
+"answer":"Feature engineering creates meaningful input variables for machine learning models."
+},
+{
+"question":"What is Classification?",
+"answer":"Classification predicts categorical outputs."
+},
+{
+"question":"What is Regression?",
+"answer":"Regression predicts continuous numerical values."
+},
+{
+"question":"What is Accuracy?",
+"answer":"Accuracy measures how many predictions are correct."
+},
+{
+"question":"What is Precision?",
+"answer":"Precision measures the proportion of positive predictions that are correct."
+},
+{
+"question":"What is Recall?",
+"answer":"Recall measures how many actual positives are identified."
+},
+{
+"question":"What is F1 Score?",
+"answer":"F1 Score is the harmonic mean of precision and recall."
+},
+{
+"question":"What is Generative AI?",
+"answer":"Generative AI creates new content such as text, images, audio and video."
+},
+{
+"question":"What is ChatGPT?",
+"answer":"ChatGPT is a conversational AI model developed by OpenAI."
+},
+{
+"question":"What is LLM?",
+"answer":"LLM stands for Large Language Model."
+}
+]
