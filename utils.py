@@ -1,19 +1,17 @@
 import json
 import nltk
 import string
+import nltk
 
-from nltk.tokenize import word_tokenize
-from nltk.corpus import stopwords
+nltk.download('punkt')
+nltk.download('punkt_tab')
 
-nltk.download("punkt")
-nltk.download("stopwords")
+import re
 
 def preprocess(text):
-
     text = text.lower()
-
-    tokens = word_tokenize(text)
-
+    text = re.sub(r'[^a-zA-Z0-9 ]', '', text)
+    return text
     stop_words = set(
         stopwords.words("english")
     )
