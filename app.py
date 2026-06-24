@@ -184,55 +184,88 @@ elif menu == "📚 FAQ Browser":
  
 # Chatbot
 elif menu == "💬 Chatbot":
- 
+
     st.success("🟢 AI Assistant Online")
- 
-    st.info("""Hello 👋
- 
+
+    st.info("""
+Hello 👋
+
 I can answer questions about:
- 
+
 • Artificial Intelligence
 • Machine Learning
 • Deep Learning
 • NLP
 • TensorFlow
 • PyTorch
- 
-Try asking: What is Machine Learning?
+
+Try asking:
+What is Machine Learning?
 """)
- 
+
     for msg in st.session_state.messages:
         with st.chat_message(msg["role"]):
             st.write(msg["content"])
- 
+
     user_input = st.chat_input("Ask AI & ML Question...")
- 
+
     if user_input:
- 
+
         st.session_state.messages.append(
             {"role": "user", "content": user_input}
         )
- 
+
         processed_input = preprocess(user_input)
- 
-        input_vector = vectorizer.transform([processed_input])
- 
-        similarity = cosine_similarity(input_vector, faq_vectors)
- 
-        best_match = similarity.argmax()
-        confidence = float(similarity[0][best_match])
- 
-        st.session_state.scores.append(confidence)
- 
-        if confidence > 0.20:
-            answer = faqs[best_match]["answer"]
-        else:
-            answer = "Question not found. Please ask AI related questions."
- 
-        st.session_state.messages.append(
-            {"role": "assistant", "content": answer}
+
+        input_vector = vectorizer.transform(
+            [processed_input]
         )
- 
+
+        similarity = cosine_similarity(
+            input_vector,
+            faq_vectors
+        )
+
+        best_match = similarity.argmax()
+
+        confidence = float(
+            similarity[0][best_match]
+        )
+
+        st.session_state.scores.append(
+            confidence
+        )
+
+        if confidence >= 0.50:
+
+            answer = faqs[
+                best_match
+            ]["answer"]
+
+        else:
+
+            answer = f"""
+🤖 I couldn't find an exact answer in my FAQ database.
+
+🎯 Match Confidence: {confidence:.2f}
+
+Please try asking questions about:
+
+• Artificial Intelligence
+• Machine Learning
+• Deep Learning
+• NLP
+• TensorFlow
+• PyTorch
+"""
+
+        st.session_state.messages.append(
+            {
+                "role": "assistant",
+                "content": answer
+            }
+        )
+
         st.rerun()
  
 # Analytics
